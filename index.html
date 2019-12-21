@@ -5,6 +5,7 @@
     <style>
         p {
             font-family: 'Courier New', Courier, monospace;
+            font-weight: bold;
         }
     </style>
     <meta charset="utf-8">
@@ -33,12 +34,12 @@
             <img src="assets/loading/note2.png" class="d d-2" />
             <img src="assets/loading/note3.png" class="d d-3" />
         </span> -->
-    <div id="main">
-        <div class="mx-auto container pt-5 pb-5">
+    <div id="main" class="flex-lg-column">
+        <div class="mx-auto container pt-5">
             <div>
                 <div class="d-flex justify-content-center">
-                    <img id="cover_6" src="assets/cover/fullcover_background.png"
-                        class="img-fluid cover slide-in from-right" style="position: absolute;" />
+                    <img id="cover_6" src="assets/cover/fullcover_background.png" class="img-fluid cover"
+                        style="position: absolute;" />
                     <img id="cover_1" src="assets/cover/fullcover_piano.png" class="img-fluid cover"
                         style="position: absolute;" />
                     <img id="cover_2" src="assets/cover/fullcover_girl.png" class="img-fluid cover"
@@ -49,17 +50,19 @@
                         style="position: absolute;" />
                     <img id="cover_4" src="assets/cover/fullcover_title.png" class="img-fluid cover"
                         style="position: absolute;" />
-                    <img src="assets/cover/fullcover_blank.png" class="img-fluid cover" />
+                    <img src="assets/cover/fullcover_blank.png" class="img-fluid cover" style="position: relative;" />
                 </div>
             </div>
         </div>
-        <div class="container mx-auto my-auto my-5" style="max-height: 200px;">
-            <div id="intro" class="row transparent" style="padding-top: 9rem; padding-bottom: 7rem;">
+        <div class="container mx-auto">
+            <div id="intro" class="row transparent" style="padding-bottom: 7rem;">
                 <h1>Introduction</h1>
                 <p class="">10 piano-centric pieces composed during the last year of my high school life. Each track
                     represents different times and events during that period in chronological order, like a diary in the
                     form of music.</p>
             </div>
+        </div>
+        <div class="container-fluid mx-auto" style="max-height: 200px;">
             <div id="notes" class="row mb-5 justify-content-center pr-5 transparent">
                 <span>
                     <img src="assets/loading/note1.png" class="d" />
@@ -70,55 +73,56 @@
             <div class="row mx-5 pt-5">
                 <div class="col-1">
                 </div>
-                <div class="col-4">
-                    <div class="justify-content-center mt-5">
-                        <p id="song1" class="transparent">1. Primrose</p>
-                        <p id="song2" class="transparent">2. Nenufares</p>
-                        <p id="song3" class="transparent">3. The Dawnshade</p>
-                        <p id="song4" class="transparent">4. Aquiver</p>
-                        <p id="song5" class="transparent">5. Pastel Wishes</p>
-                        <p id="song6" class="transparent">6. Long For Yesterday</p>
-                        <p id="song7" class="transparent">7. Primrose</p>
-                        <p id="song8" class="transparent">8. Solitary</p>
-                        <p id="song9" class="transparent">9. April Wonder</p>
-                        <p id="song10" class="transparent">10. The Silence Of Eternity</p>
+                <div class="col-md-4">
+                    <div class="justify-content-center float-right mt-5 mr-5">
+                        <h6 id="song1" class="transparent mt-3">1. Primrose</h6>
+                        <h6 id="song2" class="transparent mt-3">2. Nenufares</h6>
+                        <h6 id="song3" class="transparent mt-3">3. The Dawnshade</h6>
+                        <h6 id="song4" class="transparent mt-3">4. Aquiver</h6>
+                        <h6 id="song5" class="transparent mt-3">5. Pastel Wishes</h6>
+                        <h6 id="song6" class="transparent mt-3">6. Long For Yesterday</h6>
+                        <h6 id="song7" class="transparent mt-3">7. Primrose</h6>
+                        <h6 id="song8" class="transparent mt-3">8. Solitary</h6>
+                        <h6 id="song9" class="transparent mt-3">9. April Wonder</h6>
+                        <h6 id="song10" class="transparent mt-3">10. The Silence Of Eternity</h6>
                     </div>
                 </div>
-                <div class="col-6 justify-content-center align-self-center">
+                <div class="col-md-6 justify-content-center align-self-center">
                     <a href="https://soundcloud.com/punjichocoberry/sets/long-for-yesterday" target="_blank">
-                        <img id="cover_jacket" class="img-thumbnail transparent" src="assets/song_cover/cover.png" />
+                        <img id="cover_jacket" class="img-thumbnail transparent" style="max-height: 476px;"
+                            src="assets/song_cover/cover.png" />
                     </a>
                 </div>
             </div>
-            <p>test</p>
-            <p>test</p>
-            <p>test</p>
-            <p>test</p>
-            <p>test</p>
-            <p>test</p>
-            <p>test</p>
-            <p>test</p>
-            <p>test</p>
-            <p>test</p>
-            <p>test</p>
-            <p>test</p>
-            <p>test</p>
-            <p>test</p>
-            <p>test</p>
-            <p>test</p>
-            <p>test</p>
-            <p>test</p>
-            <p>test</p>
-            <p>test</p>
-            <p>test</p>
-            <p>test</p>
-            <p>test</p>
-            <p>test</p>
+            <div class="d-flex flex-row my-5 justify-content-center">
+                <div class="card mr-2" style="width: 200px;">
+                    <div class="card-body">
+                        <h5 class="card-title">Arrangement</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">Punjidixie</h6>
+                    </div>
+                </div>
+                <div class="card mr-2" style="width: 200px;">
+                    <div class="card-body">
+                        <h5 class="card-title">Illustration</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">Punjidixie</h6>
+                    </div>
+                </div>
+                <div class="card mr-2" style="width: 200px;">
+                    <div class="card-body">
+                        <h5 class="card-title">Web Design</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">Nakajima Kuro</h6>
+                    </div>
+                </div>
+            </div>
+            <footer>
+                <!-- Copyright -->
+                <div class="footer-copyright text-center py-3 jumbotron">© 2018 Copyright:
+                    <a href="#"> Nakajima Kuro</a>
+                </div>
+                <!-- Copyright -->
+            </footer>
         </div>
     </div>
-    <footer>
-
-    </footer>
 </body>
 
 </html>

@@ -1,11 +1,33 @@
 .cover{
-    opacity: 0;
     max-height: 85%;
     max-width: 85%;
 }
 
 .transparent{
     opacity: 0;
+}
+
+.fly-left{
+	transform: translateX(0);
+	animation-name: flyLeft;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in;
+	animation-duration: 1s;
+}
+
+.fly-right{
+	transform: translateX(0);
+	animation-name: flyRight;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in;
+	animation-duration: 1s;
+}
+.fade-in-slow {
+	opacity: 1;
+	animation-name: fadeInOpacity;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in;
+	animation-duration: 2s;
 }
 
 .fade-in {
@@ -38,6 +60,24 @@
 	animation-iteration-count: 1;
 	animation-timing-function: ease-in;
 	animation-duration: 0.2s;
+}
+
+@keyframes flyLeft {
+	0% {
+		transform: translateX(-50px);
+	}
+	100% {
+		transform: translateX(0px);
+	}
+}
+
+@keyframes flyRight {
+	0% {
+		transform: translateX(12rem);
+	}
+	100% {
+		transform: translateX(0px);
+	}
 }
 
 @keyframes fadeInOpacity {
