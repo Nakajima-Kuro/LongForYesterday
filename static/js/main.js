@@ -8,7 +8,7 @@ window.onload = function () {
         $('#cover_6').addClass('fade-in-fast') //background
     }, 0 + this.trigger);
     setTimeout(function () {
-        $('#cover_2').addClass('fade-in') //girl
+        $('#cover_2').addClass('fade-in-medium') //girl
     }, 500 + this.trigger);
     setTimeout(function () {
         $('#cover_1').addClass('fade-in'); //Piano
@@ -28,7 +28,7 @@ $(document).ready(function () {
         setTimeout(function () {
             var $intro = $('#intro')
             $intro.waypoint(function () {
-                $intro.addClass('fade-in-fast');
+                $intro.addClass('fade-in-medium');
             }, { offset: '80%' });
             var $notes = $('#notes')
             $notes.waypoint(function () {
@@ -38,39 +38,39 @@ $(document).ready(function () {
             var $song1 = $('#song1')
             trigger = 100;
             $song1.waypoint(function () {
-                $song1.addClass('fade-in-fast');
+                $song1.addClass('animated slow fadeInLeft');
                 setTimeout(function () {
-                    $('#cover_jacket').addClass('fade-in-medium')
-                    $('#blue_arrow').addClass('fade-in')
+                    $('#cover_jacket').addClass('animated slow fadeIn')
+                    $('#blue_arrow').addClass('animated slow fadeInDown')
                 }, 300 + this.trigger);
                 setTimeout(function () {
-                    $('#song2').addClass('fade-in-medium')
+                    $('#song2').addClass('animated slow fadeInLeft')
                 }, 0 + this.trigger);
                 setTimeout(function () {
-                    $('#song3').addClass('fade-in-medium')
+                    $('#song3').addClass('animated slow fadeInLeft')
                 }, 250 + this.trigger);
                 setTimeout(function () {
-                    $('#song4').addClass('fade-in-medium')
+                    $('#song4').addClass('animated slow fadeInLeft')
                 }, 500 + this.trigger);
                 setTimeout(function () {
-                    $('#song5').addClass('fade-in-medium')
+                    $('#song5').addClass('animated slow fadeInLeft')
                 }, 750 + this.trigger);
                 setTimeout(function () {
-                    $('#song6').addClass('fade-in-medium')
+                    $('#song6').addClass('animated slow fadeInLeft')
                 }, 1000 + this.trigger);
                 setTimeout(function () {
-                    $('#song7').addClass('fade-in-medium')
+                    $('#song7').addClass('animated slow fadeInLeft')
                 }, 1250 + this.trigger);
                 setTimeout(function () {
-                    $('#song8').addClass('fade-in-medium')
+                    $('#song8').addClass('animated slow fadeInLeft')
                 }, 1500 + this.trigger);
                 setTimeout(function () {
-                    $('#song9').addClass('fade-in-medium')
+                    $('#song9').addClass('animated slow fadeInLeft')
                 }, 1500 + this.trigger);
                 setTimeout(function () {
-                    $('#song10').addClass('fade-in-medium')
+                    $('#song10').addClass('animated slow fadeInLeft')
                 }, 1500 + this.trigger);
-            }, { offset: '80%' });
+            }, { offset: '75%' });
         }, 500);
     });
 })
