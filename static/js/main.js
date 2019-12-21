@@ -73,4 +73,14 @@ $(document).ready(function () {
             }, { offset: '75%' });
         }, 500);
     });
+
+    $('#cover_jacket').mouseenter(function () {
+        $('#cover_jacket').removeClass('fadeIn transparent slow').addClass('animated infinite super-slow pulse')
+    })
+    $('#cover_jacket').mouseleave(function () {
+        $(this).removeClass('infinite super-slow pulse')
+        setTimeout(function () {
+            $(this).addClass('infinite super-slow pulse')
+        }, 100);
+    })
 })
