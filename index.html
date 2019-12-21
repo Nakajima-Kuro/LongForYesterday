@@ -1,4 +1,6 @@
 <!DOCTYPE html>
+<html>
+
 <head>
     <style>
         p {
@@ -8,50 +10,115 @@
     <meta charset="utf-8">
     <title>Long For Yesterday</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="icon" type="image/x-icon" href="favicon.ico">
-    <link rel="stylesheet" href="css/preload.css">
-    <script src="static/bootstrap/js/bootstrap.min.js"></script>
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="HandheldFriendly" content="true">
+    <link rel="icon" type="image/x-icon" href="assets/song_cover/Aquiver.png">
     <script src="static/jquerry/jquerry.min.js"></script>
-    <script src="static/popper/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="static/waypoints/lib/jquery.waypoints.min.js"></script>
+    <script src="static/waypoints/src/waypoint.js"></script>
+    <link rel="stylesheet" href="static/css/preload.css">
+    <link rel="stylesheet" href="static/css/main.css">
+    <script src="static/js/main.js"></script>
     <link rel="stylesheet" href="static/bootstrap/css/bootstrap.min.css">
+    <script src="static/bootstrap/js/bootstrap.min.js"></script>
 </head>
+
 <body>
-    
-    <span id="preload">
-        <img src="assets/note1.png" class="d" />
-        <img src="assets/note2.png" class="d d-2" />
-        <img src="assets/note3.png" class="d d-3" />
-    </span>
-    <div class="mx-auto container pt-5 pb-5">
-        <div style="">
-            <div class="d-flex justify-content-center">
-                <img src="assets/cover.png" class="img-fluid" style="max-width: 800px; max-height: 70%; position: relative;"/>
-            </div>
-        </div>
-    </div>
-    <div class="container mx-auto my-auto py-5" style="max-height: 200px;">
-        <div class="row">
-            <div class="col-2">
-            </div>
-            <div class="col-4">
-                <div class="mt-5">
-                    <p>1. Primrose</p>
-                    <p>2. Nenufares</p>
-                    <p>3. The Dawnshade</p>
-                    <p>4. Aquiver</p>
-                    <p>5. Pastel Wishes</p>
-                    <p>6. Long For Yesterday</p>
-                    <p>7. Primrose</p>
-                    <p>8. Solitary</p>
-                    <p>9. April Wonder</p>
-                    <p>10. The Silence Of Eternity</p>
+    <!-- <span id="preload">
+            <img src="assets/loading/note1.png" class="d" />
+            <img src="assets/loading/note2.png" class="d d-2" />
+            <img src="assets/loading/note3.png" class="d d-3" />
+        </span> -->
+    <div id="main">
+        <div class="mx-auto container pt-5 pb-5">
+            <div>
+                <div class="d-flex justify-content-center">
+                    <img id="cover_6" src="assets/cover/fullcover_background.png"
+                        class="img-fluid cover slide-in from-right" style="position: absolute;" />
+                    <img id="cover_1" src="assets/cover/fullcover_piano.png" class="img-fluid cover"
+                        style="position: absolute;" />
+                    <img id="cover_2" src="assets/cover/fullcover_girl.png" class="img-fluid cover"
+                        style="position: absolute;" />
+                    <img id="cover_3" src="assets/cover/fullcover_sol.png" class="img-fluid cover"
+                        style="position: absolute;" />
+                    <img id="cover_5" src="assets/cover/fullcover_name.png" class="img-fluid cover"
+                        style="position: absolute;" />
+                    <img id="cover_4" src="assets/cover/fullcover_title.png" class="img-fluid cover"
+                        style="position: absolute;" />
+                    <img src="assets/cover/fullcover_blank.png" class="img-fluid cover" />
                 </div>
             </div>
-            <div class="col-6">
-                <a href="https://soundcloud.com/punjichocoberry/sets/long-for-yesterday" target="_blank">
-                    <img class="img-thumbnail" src="assets/cover.png" />
-                </a>
+        </div>
+        <div class="container mx-auto my-auto my-5" style="max-height: 200px;">
+            <div id="intro" class="row transparent" style="padding-top: 9rem; padding-bottom: 7rem;">
+                <h1>Introduction</h1>
+                <p class="">10 piano-centric pieces composed during the last year of my high school life. Each track
+                    represents different times and events during that period in chronological order, like a diary in the
+                    form of music.</p>
             </div>
+            <div id="notes" class="row mb-5 justify-content-center pr-5 transparent">
+                <span>
+                    <img src="assets/loading/note1.png" class="d" />
+                    <img src="assets/loading/note2.png" class="d d-2" />
+                    <img src="assets/loading/note3.png" class="d d-3" />
+                </span>
+            </div>
+            <div class="row mx-5 pt-5">
+                <div class="col-1">
+                </div>
+                <div class="col-4">
+                    <div class="justify-content-center mt-5">
+                        <p id="song1" class="transparent">1. Primrose</p>
+                        <p id="song2" class="transparent">2. Nenufares</p>
+                        <p id="song3" class="transparent">3. The Dawnshade</p>
+                        <p id="song4" class="transparent">4. Aquiver</p>
+                        <p id="song5" class="transparent">5. Pastel Wishes</p>
+                        <p id="song6" class="transparent">6. Long For Yesterday</p>
+                        <p id="song7" class="transparent">7. Primrose</p>
+                        <p id="song8" class="transparent">8. Solitary</p>
+                        <p id="song9" class="transparent">9. April Wonder</p>
+                        <p id="song10" class="transparent">10. The Silence Of Eternity</p>
+                    </div>
+                </div>
+                <div class="col-6 justify-content-center align-self-center">
+                    <a href="https://soundcloud.com/punjichocoberry/sets/long-for-yesterday" target="_blank">
+                        <img id="cover_jacket" class="img-thumbnail transparent" src="assets/song_cover/cover.png" />
+                    </a>
+                </div>
+            </div>
+            <p>test</p>
+            <p>test</p>
+            <p>test</p>
+            <p>test</p>
+            <p>test</p>
+            <p>test</p>
+            <p>test</p>
+            <p>test</p>
+            <p>test</p>
+            <p>test</p>
+            <p>test</p>
+            <p>test</p>
+            <p>test</p>
+            <p>test</p>
+            <p>test</p>
+            <p>test</p>
+            <p>test</p>
+            <p>test</p>
+            <p>test</p>
+            <p>test</p>
+            <p>test</p>
+            <p>test</p>
+            <p>test</p>
+            <p>test</p>
         </div>
     </div>
+    <footer>
+
+    </footer>
 </body>
+
+</html>
