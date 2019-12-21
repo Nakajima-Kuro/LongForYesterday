@@ -6,6 +6,7 @@
         p {
             font-family: 'Courier New', Courier, monospace;
             font-weight: bold;
+            font-size: large;
         }
     </style>
     <meta charset="utf-8">
@@ -15,6 +16,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="HandheldFriendly" content="true">
     <link rel="icon" type="image/x-icon" href="assets/song_cover/Aquiver.png">
+    <link rel="stylesheet" href="static/css/main.css">
     <script src="static/jquerry/jquerry.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
         integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
@@ -22,7 +24,6 @@
     <script src="static/waypoints/lib/jquery.waypoints.min.js"></script>
     <script src="static/waypoints/src/waypoint.js"></script>
     <link rel="stylesheet" href="static/css/preload.css">
-    <link rel="stylesheet" href="static/css/main.css">
     <script src="static/js/main.js"></script>
     <link rel="stylesheet" href="static/bootstrap/css/bootstrap.min.css">
     <script src="static/bootstrap/js/bootstrap.min.js"></script>
@@ -35,46 +36,38 @@
             <img src="assets/loading/note3.png" class="d d-3" />
         </span> -->
     <div id="main" class="flex-lg-column">
-        <div class="mx-auto container pt-5">
-            <div>
-                <div class="d-flex justify-content-center">
-                    <img id="cover_6" src="assets/cover/fullcover_background.png" class="img-fluid cover"
-                        style="position: absolute;" />
-                    <img id="cover_1" src="assets/cover/fullcover_piano.png" class="img-fluid cover"
-                        style="position: absolute;" />
-                    <img id="cover_2" src="assets/cover/fullcover_girl.png" class="img-fluid cover"
-                        style="position: absolute;" />
-                    <img id="cover_3" src="assets/cover/fullcover_sol.png" class="img-fluid cover"
-                        style="position: absolute;" />
-                    <img id="cover_5" src="assets/cover/fullcover_name.png" class="img-fluid cover"
-                        style="position: absolute;" />
-                    <img id="cover_4" src="assets/cover/fullcover_title.png" class="img-fluid cover"
-                        style="position: absolute;" />
-                    <img src="assets/cover/fullcover_blank.png" class="img-fluid cover" style="position: relative;" />
-                </div>
-            </div>
+        <div class="mx-auto container pt-5 justify-content-center img-fluid">
+            <img id="cover_6" src="assets/cover/fullcover_background.png" class="img cover transparent"
+                style="position: absolute;" />
+            <img id="cover_1" src="assets/cover/fullcover_piano.png" class="img cover transparent"
+                style="position: absolute;" />
+            <img id="cover_2" src="assets/cover/fullcover_girl.png" class="img cover transparent"
+                style="position: absolute;" />
+            <img id="cover_3" src="assets/cover/fullcover_sol.png" class="img cover transparent"
+                style="position: absolute;" />
+            <img id="cover_5" src="assets/cover/fullcover_name.png" class="img cover transparent"
+                style="position: absolute;" />
+            <img id="cover_4" src="assets/cover/fullcover_title.png" class="img cover transparent"
+                style="position: absolute;" />
+            <img src="assets/cover/fullcover_blank.png" class="img-fluid cover" />
         </div>
         <div class="container mx-auto">
-            <div id="intro" class="row transparent" style="padding-bottom: 7rem;">
+            <div id="intro" class="transparent mt-1" style="padding-bottom: 7rem;">
                 <h1>Introduction</h1>
-                <p class="">10 piano-centric pieces composed during the last year of my high school life. Each track
-                    represents different times and events during that period in chronological order, like a diary in the
-                    form of music.</p>
+                <p>10 piano-centric pieces composed during the last year of my high school life.</p>
+                <p>Each track
+                    represents different times and events during that period in chronological order,</p>
+                <p>
+                    like a diary in the form of music.
+                </p>
             </div>
         </div>
         <div class="container-fluid mx-auto" style="max-height: 200px;">
-            <div id="notes" class="row mb-5 justify-content-center pr-5 transparent">
-                <span>
-                    <img src="assets/loading/note1.png" class="d" />
-                    <img src="assets/loading/note2.png" class="d d-2" />
-                    <img src="assets/loading/note3.png" class="d d-3" />
-                </span>
-            </div>
-            <div class="row mx-5 pt-5">
+            <div class="row mx-5">
                 <div class="col-1">
                 </div>
                 <div class="col-md-4">
-                    <div class="justify-content-center float-right mt-5 mr-5">
+                    <div class="justify-content-center float-right mr-5 mt-5">
                         <h6 id="song1" class="transparent mt-3">1. Primrose</h6>
                         <h6 id="song2" class="transparent mt-3">2. Nenufares</h6>
                         <h6 id="song3" class="transparent mt-3">3. The Dawnshade</h6>
@@ -88,6 +81,12 @@
                     </div>
                 </div>
                 <div class="col-md-6 justify-content-center align-self-center">
+                    <div class="row justify-content-center pb-2">
+                        <span id="blue_arrow" class="transparent">
+                            <img src='./assets/others/tegaki_arrow_blue.svg'>
+                            <img src='./assets/others/tegaki_jacket.svg' class="jacket-word">
+                        </span>
+                    </div>
                     <a href="https://soundcloud.com/punjichocoberry/sets/long-for-yesterday" target="_blank">
                         <img id="cover_jacket" class="img-thumbnail transparent" style="max-height: 476px;"
                             src="assets/song_cover/cover.png" />

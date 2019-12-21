@@ -1,3 +1,8 @@
+.jacket-word{
+	position: absolute;
+	top: -30px;
+}
+
 .cover{
     max-height: 85%;
     max-width: 85%;
