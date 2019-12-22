@@ -7,13 +7,13 @@ window.onload = function () {
             $('#cover_6').addClass('fade-in-fast') //background
         }, 0 + this.trigger);
         setTimeout(function () {
-            $('#cover_2').addClass('fade-in-medium') //girl
+            $('#cover_2').addClass('fade-in-fast') //girl
         }, 500 + this.trigger);
         setTimeout(function () {
-            $('#cover_1').addClass('fade-in'); //Piano
-        }, 900 + this.trigger);
+            $('#cover_3').addClass('fade-in-fast'); //Piano
+        }, 1100 + this.trigger);
         setTimeout(function () {
-            $('#cover_3').addClass('fade-in-fast') //Sol
+            $('#cover_1').addClass('fade-in') //Sol
         }, 1500 + this.trigger);
         setTimeout(function () {
             $('#cover_4').addClass('fade-in')   //Title
@@ -79,7 +79,7 @@ $(document).ready(function () {
                 $('#cover-photo-3').addClass('animated flyIn');
                 $('#cover-photo-4').addClass('animated flyIn');
                 $('#sample_arrow').addClass('animated flyIn');
-            }, { offset: '80%' })
+            }, { offset: '70%' })
 
             $('#crossfade').click(function () {
                 $('#youtubePreview').modal('toggle');
