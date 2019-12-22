@@ -97,7 +97,7 @@ $(document).ready(function () {
             var $credit = $('#credit')
             $credit.waypoint(function () {
                 $('#credit').addClass('animated slow fadeIn');
-            }, { offset: '95%' });
+            }, { offset: '90%' });
 
             var $videoSrc = "https://www.youtube-nocookie.com/embed/iAosGj32hdQ";
             

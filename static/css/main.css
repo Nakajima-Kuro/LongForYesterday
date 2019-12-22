@@ -54,10 +54,27 @@ img {
 .cover-photo-1
 {
 	max-height: 400px;
-	filter: blur(1px);
+	filter: opacity(0.75) contrast(1.05);
 	position: relative;
 	transform: rotate(-10deg);
 	transition: filter .5s;
+}
+
+.cover-photo-1-play
+{
+	position: absolute;
+	transform: rotate(-10deg);
+	margin-top: 35%;
+	margin-left: 35%;
+	transition: transform .3s;
+}
+
+.crossfade:hover .cover-photo-1-play{
+	transform: scale(1.15) rotate(-10deg);
+}
+
+.crossfade:hover .cover-photo-1{
+	filter: opacity(1)
 }
 
 .credit{
@@ -84,17 +101,6 @@ img {
 	border-color: #ff9b9b;
 	color: white;
 	cursor: pointer;
-}
-.cover-photo-1:hover{
-	filter: blur(0.5px);
-}
-
-.cover-photo-1-play
-{
-	position: absolute;
-	transform: rotate(-10deg);
-	margin-top: 35%;
-	margin-left: 35%;
 }
 
 .cover-photo-2
