@@ -60,6 +60,10 @@ img {
 	transition: filter .5s;
 }
 
+.credit{
+	text-decoration: none !important;
+}
+
 .shop-content{
 	background-color: white;
 	text-decoration: none !important;
