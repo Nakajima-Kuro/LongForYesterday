@@ -1,7 +1,46 @@
+.wrapper-projekte .post img {
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+}
+
+a { color: inherit; } 
+
+.no-cursor:hover{
+	cursor: default;
+}
+
+img {
+	vertical-align: bottom;
+	border: 0;
+}
+
+.sample{
+	margin-left: 30%;
+}
+
 .jacket-word{
 	position: absolute;
 	top: -30px;
 }
+
+.jacket{
+	transition: transform .2s;
+}
+
+.jacket:hover{
+	transform: scale(1.05);
+}
+
+.crossfade{
+	transition: transform .5s;
+}
+
+.crossfade:hover{
+	transform: rotate(5deg);
+	cursor: pointer;
+}
+
+
 
 .cover{
     max-height: 85%;
@@ -10,6 +49,73 @@
 
 .transparent{
     opacity: 0;
+}
+
+.cover-photo-1
+{
+	max-height: 400px;
+	filter: blur(1px);
+	position: relative;
+	transform: rotate(-10deg);
+	transition: filter .5s;
+}
+
+.shop-content{
+	background-color: white;
+	text-decoration: none !important;
+	color: #4477b2;
+	font-family: cursive;
+	text-align: center;
+	font-weight: 550;
+	font-size: large;
+	-webkit-transition: background-color 0.3s;
+    -moz-transition:    background-color 0.3s;
+    -ms-transition:     background-color 0.3s;
+    -o-transition:      background-color 0.3s;
+    transition:         background-color 0.3s;
+}
+
+.shop-content:hover{
+	background-color:#ffdfd3;
+	cursor: pointer;
+}
+.cover-photo-1:hover{
+	filter: blur(0.5px);
+}
+
+.cover-photo-1-play
+{
+	position: absolute;
+	transform: rotate(-10deg);
+	margin-top: 35%;
+	margin-left: 35%;
+}
+
+.cover-photo-2
+{
+	position: relative;
+	transform: rotate(-25deg);
+	margin-top: 10rem;
+}
+
+.cover-photo-3
+{
+	position: absolute;
+	transform: rotate(30deg);
+	margin-left: 15rem;
+}
+
+.cover-photo-4
+{
+	position: absolute;
+	transform: rotate(-5deg);
+	margin-left: 25rem;
+	margin-top: 15rem;
+}
+
+.cover-photo-5
+{
+	transform: rotate(5deg);
 }
 
 .fade-in-slow {

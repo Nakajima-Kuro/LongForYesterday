@@ -25,12 +25,13 @@
     <script src="static/waypoints/lib/jquery.waypoints.min.js"></script>
     <script src="static/waypoints/src/waypoint.js"></script>
     <script src="static/js/main.js"></script>
-    <link rel="stylesheet" href="static/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="static/bootstrap/css/bootstrap.css">
     <script src="static/bootstrap/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="./static/animate/animate.css">
 </head>
 
 <body>
+    <div id="start" class="pb-1"></div>
     <!-- <span id="preload">
             <img src="assets/loading/note1.png" class="d" />
             <img src="assets/loading/note2.png" class="d d-2" />
@@ -52,9 +53,9 @@
                 style="position: absolute;" />
             <img src="assets/cover/fullcover_blank.png" class="img-fluid cover" />
         </div>
-        <div class="container mx-auto">
+        <div class="container mx-auto pl-5">
             <div id="intro" class="transparent mt-1" style="padding-bottom: 7rem;">
-                <h1>Introduction</h1>
+                <h1 class="no-cursor">Introduction</h1>
                 <p>10 piano-centric pieces composed during the last year of my high school life.</p>
                 <p>Each track
                     represents different times and events during that period in chronological order,</p>
@@ -63,8 +64,8 @@
                 </p>
             </div>
         </div>
-        <div class="container-fluid mx-auto" style="max-height: 200px;">
-            <div class="row mx-5">
+        <div class="container mx-auto">
+            <div class="row mx-5 mt-auto mb-5">
                 <div class="col-1">
                 </div>
                 <div class="col-md-4">
@@ -89,13 +90,79 @@
                         </span>
                     </div>
                     <a href="https://soundcloud.com/punjichocoberry/sets/long-for-yesterday" target="_blank">
-                        <img id="cover_jacket" class="img-thumbnail transparent" style="max-height: 476px;"
+                        <img id="cover_jacket" class="img-thumbnail transparent jacket" style="max-height: 476px;"
                             src="assets/song_cover/cover.png" />
                     </a>
                 </div>
             </div>
-            
-            <div class="d-flex flex-row my-5 justify-content-center">
+            <div class="row py-5">
+                <div class="col-5">
+                    <div class="col transparent" id="crossfade">
+                        <div class="d-flex crossfade col-12">
+                            <img id='crossfade' class="img-thumbnail cover-photo-1" src="assets/song_cover/cover.png" />
+                            <img class='cover-photo-1-play' src="assets/others/icon_play.svg" />
+                        </div>
+                    </div>
+                    <div class="row justify-content-center pb-2">
+                        <span id="sample_arrow" class="transparent">
+                            <img src='./assets/others/tegaki_arrow_orange.svg' class="sample">
+                            <img src='./assets/others/tegaki_sample.svg' style="width: 85%;">
+                        </span>
+                    </div>
+                </div>
+                <div class="col-7 d-flex">
+                    <div class="cover-photo-2">
+                        <img id="cover-photo-2" class="img-thumbnail jacket transparent" style="max-height: 250px;"
+                            src="assets/song_cover/Aquiver.png" />
+                    </div>
+                    <div class="cover-photo-3">
+                        <img id="cover-photo-3" class="img-thumbnail jacket transparent" style="max-height: 300px;"
+                            src="assets/song_cover/Solitary.png" />
+                    </div>
+                    <div class="cover-photo-4">
+                        <img id="cover-photo-4" class="img-thumbnail jacket transparent" style="max-height: 250px;"
+                            src="assets/song_cover/The_Silence_Of_Eternity.png" />
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade" id="youtubePreview" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog modal-lg" role="document">
+                    <div class="modal-content">
+                        <div class="modal-body">
+                            <!-- 16:9 aspect ratio -->
+                            <div class="embed-responsive embed-responsive-16by9">
+                                <iframe class="embed-responsive-item"
+                                    src="https://www.youtube-nocookie.com/embed/iAosGj32hdQ" id="video"
+                                    allowscriptaccess="always" allow="autoplay"></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row d-flex justify-content-end" id="shop">
+                <div class="cover-photo-5 mr-5">
+                    <img id="cover-photo-5" class="img-thumbnail transparent" style="max-height: 350px;"
+                        src="assets/song_cover/Pastel_Wishes.png" />
+                </div>
+                <div class="card border-0 mr-5 transparent" style="width: 30rem;" id="shop_content">
+                    <div class="card-body">
+                        <h4 class="card-title no-cursor" style="font-family: cursive; font-weight: bold;">Avalible on:
+                        </h4>
+                        <ul style="list-style: none;" class="list-group list-group-flush">
+                            <li>
+                                <a href='https://punjidixie.bandcamp.com/album/long-for-yesterday' target="_blank"
+                                    class="list-group-item border my-2 shop-content">Bandcamp</a>
+                            </li>
+                            <li>
+                                <a href="https://soundcloud.com/punjichocoberry/sets/long-for-yesterday" target="_blank"
+                                    class="list-group-item border my-2 shop-content">Soundcloud</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="d-flex flex-row my-5 justify-content-center transparent" id="credit">
                 <div class="card mr-2" style="width: 200px;">
                     <div class="card-body">
                         <h5 class="card-title">Arrangement</h5>
@@ -115,18 +182,15 @@
                     </div>
                 </div>
             </div>
-            <div>
-
-            </div>
-            <footer>
-                <!-- Copyright -->
-                <div class="footer-copyright text-center py-3 jumbotron">© 2019 Copyright:
-                    <a href="#"> Nakajima Kuro</a>
-                </div>
-                <!-- Copyright -->
-            </footer>
         </div>
     </div>
+    <footer>
+        <!-- Copyright -->
+        <div class="footer-copyright text-center py-3 jumbotron">© 2019 Copyright:
+            <a href="#"> Nakajima Kuro</a>
+        </div>
+        <!-- Copyright -->
+    </footer>
 </body>
 
 </html>

@@ -1,0 +1,10 @@
+<svg id="グループ_12" data-name="グループ 12" xmlns="http://www.w3.org/2000/svg" width="81.186" height="81.186" viewBox="0 0 81.186 81.186">
+  <g id="_130_arr_hoso" data-name="130_arr_hoso" transform="translate(12.662 10.873)">
+    <rect id="長方形_34" data-name="長方形 34" width="59.688" height="59.688" fill="none"/>
+    <path id="パス_20" data-name="パス 20" d="M15,15.484V37.867a2.487,2.487,0,0,0,3.73,2.139L36.139,28.814a2.562,2.562,0,0,0,0-4.278L18.73,13.345A2.487,2.487,0,0,0,15,15.484Z" transform="translate(3.652 3.168)" fill="none" stroke="#fa3b3b" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+  </g>
+  <g id="楕円形_1" data-name="楕円形 1" transform="translate(0)" fill="none" stroke="#fa3b3b" stroke-width="2">
+    <circle cx="40.593" cy="40.593" r="40.593" stroke="none"/>
+    <circle cx="40.593" cy="40.593" r="39.593" fill="none"/>
+  </g>
+</svg>

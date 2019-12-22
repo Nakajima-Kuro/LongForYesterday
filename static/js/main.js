@@ -1,46 +1,46 @@
 var trigger = 400;
-var done = false;
 
 window.onload = function () {
-    done = true;
-    $('html, body').animate({ scrollTop: '0px' }, 200);
+    $('html, body').animate({ scrollTop: '0px' }, 100);
     setTimeout(function () {
-        $('#cover_6').addClass('fade-in-fast') //background
-    }, 0 + this.trigger);
-    setTimeout(function () {
-        $('#cover_2').addClass('fade-in-medium') //girl
-    }, 500 + this.trigger);
-    setTimeout(function () {
-        $('#cover_1').addClass('fade-in'); //Piano
-    }, 900 + this.trigger);
-    setTimeout(function () {
-        $('#cover_3').addClass('fade-in') //Sol
-    }, 1500 + this.trigger);
-    setTimeout(function () {
-        $('#cover_4').addClass('fade-in')   //Title
-    }, 2400 + this.trigger);
-    setTimeout(function () {
-        $('#cover_5').addClass('fade-in-medium') //Punji
-    }, 3000 + this.trigger);
+        setTimeout(function () {
+            $('#cover_6').addClass('fade-in-fast') //background
+        }, 0 + this.trigger);
+        setTimeout(function () {
+            $('#cover_2').addClass('fade-in-medium') //girl
+        }, 500 + this.trigger);
+        setTimeout(function () {
+            $('#cover_1').addClass('fade-in'); //Piano
+        }, 900 + this.trigger);
+        setTimeout(function () {
+            $('#cover_3').addClass('fade-in') //Sol
+        }, 1500 + this.trigger);
+        setTimeout(function () {
+            $('#cover_4').addClass('fade-in')   //Title
+        }, 2000 + this.trigger);
+        setTimeout(function () {
+            $('#cover_5').addClass('animated flyInSmall') //Punji
+        }, 2800 + this.trigger);
+    }, 150);
 }
 $(document).ready(function () {
-    $('body').waypoint(function () {
+    $('#start').waypoint(function () {
         setTimeout(function () {
             var $intro = $('#intro')
             $intro.waypoint(function () {
-                $intro.addClass('fade-in-medium');
+                $intro.addClass('animated flyInIntro');
             }, { offset: '80%' });
-            var $notes = $('#notes')
-            $notes.waypoint(function () {
-                $notes.addClass('fade-in-fast');
-            }, { offset: '80%' });
+            // var $notes = $('#notes')
+            // $notes.waypoint(function () {
+            //     $notes.addClass('fade-in-fast');
+            // }, { offset: '80%' });
 
             var $song1 = $('#song1')
             trigger = 100;
             $song1.waypoint(function () {
                 $song1.addClass('animated slow fadeInLeft');
                 setTimeout(function () {
-                    $('#cover_jacket').addClass('animated slow fadeIn')
+                    $('#cover_jacket').addClass('animated slower fadeIn')
                     $('#blue_arrow').addClass('animated slow fadeInDown')
                 }, 300 + this.trigger);
                 setTimeout(function () {
@@ -71,16 +71,46 @@ $(document).ready(function () {
                     $('#song10').addClass('animated slow fadeInLeft')
                 }, 1500 + this.trigger);
             }, { offset: '75%' });
-        }, 500);
-    });
 
-    $('#cover_jacket').mouseenter(function () {
-        $('#cover_jacket').removeClass('fadeIn transparent slow').addClass('animated infinite super-slow pulse')
-    })
-    $('#cover_jacket').mouseleave(function () {
-        $(this).removeClass('infinite super-slow pulse')
-        setTimeout(function () {
-            $(this).addClass('infinite super-slow pulse')
-        }, 100);
-    })
+            var $crossfade = $('#crossfade')
+            $crossfade.waypoint(function () {
+                $('#crossfade').addClass('animated flyIn');
+                $('#cover-photo-2').addClass('animated flyIn');
+                $('#cover-photo-3').addClass('animated flyIn');
+                $('#cover-photo-4').addClass('animated flyIn');
+                $('#sample_arrow').addClass('animated flyIn');
+            }, { offset: '80%' })
+
+            $('#crossfade').click(function () {
+                $('#youtubePreview').modal('toggle');
+                $('#youtubePreview').modal({
+                    backdrop: true
+                });
+            });
+
+            var $shop = $('#shop')
+            $shop.waypoint(function () {
+                $('#cover-photo-5').addClass('animated slow flyInIntro');
+                $('#shop_content').addClass('animated slower fadeIn');
+            }, { offset: '80%' });
+
+            var $credit = $('#credit')
+            $credit.waypoint(function () {
+                $('#credit').addClass('animated slow fadeIn');
+            }, { offset: '80%' });
+
+            var $videoSrc = "https://www.youtube-nocookie.com/embed/iAosGj32hdQ";
+            
+            $('#youtubePreview').on('shown.bs.modal', function (e) {
+
+                // set the video src to autoplay and not to show related video. Youtube related video is like a box of chocolates... you never know what you're gonna get
+                $("#video").attr('src', $videoSrc + "?rel=0;autoplay=1&amp;modestbranding=1&amp;showinfo=0");
+            })
+            // stop playing the youtube video when I close the modal
+            $('#youtubePreview').on('hide.bs.modal', function (e) {
+                // a poor man's stop video
+                $("#video").attr('src', $videoSrc);
+            })
+        }, 1000);
+    });//end of body waypoint
 })
