@@ -13,7 +13,7 @@ window.onload = function () {
             $('#cover_1').addClass('fade-in'); //Piano
         }, 900 + this.trigger);
         setTimeout(function () {
-            $('#cover_3').addClass('fade-in') //Sol
+            $('#cover_3').addClass('fade-in-fast') //Sol
         }, 1500 + this.trigger);
         setTimeout(function () {
             $('#cover_4').addClass('fade-in')   //Title
