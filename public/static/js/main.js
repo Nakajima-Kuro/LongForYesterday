@@ -24,6 +24,13 @@ window.onload = function () {
     }, 150);
 }
 $(document).ready(function () {
+    $(".wrapper").fadeOut('fast');
+    setTimeout(function () {
+        // un-lock scroll position
+        var html = jQuery('html');
+        var scrollPosition = html.data('scroll-position');
+        html.css('overflow', html.data('previous-overflow'));
+    }, 700)
     $('#start').waypoint(function () {
         setTimeout(function () {
             var $intro = $('#intro')

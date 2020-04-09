@@ -20,6 +20,7 @@ xmlns:fb="http://ogp.me/ns/fb#">
     <link rel="icon" type="image/x-icon" href="assets/song_cover/Aquiver.png">
     <link rel="stylesheet" href="static/css/main.css">
     <script src="static/jquerry/jquerry.min.js"></script>
+    <script src="static/js/preload.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
         integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
         crossorigin="anonymous"></script>
@@ -33,11 +34,13 @@ xmlns:fb="http://ogp.me/ns/fb#">
 
 <body>
     <div id="start" class="pb-1"></div>
-    <!-- <span id="preload">
+    <div class="wrapper">
+        <span id="preload">
             <img src="assets/loading/note1.png" class="d" />
             <img src="assets/loading/note2.png" class="d d-2" />
             <img src="assets/loading/note3.png" class="d d-3" />
-        </span> -->
+        </span>
+    </div>
     <div id="main" class="flex-lg-column">
         <div class="container pt-5 justify-content-center">
             <img src="assets/song_cover/cover.png" style="display: none;" />
